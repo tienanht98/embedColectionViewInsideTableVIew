@@ -100,6 +100,81 @@
                                             <outlet property="CollectionVIew" destination="GG9-Iu-grH" id="Mf6-3V-Wmc"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="131" id="YSH-0y-2UW" customClass="headerTableViewCell" customModule="embedCollectionVIew_to_TableView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="199" width="375" height="131"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YSH-0y-2UW" id="bNK-HT-11w">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="130.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7f-aY-Kod">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ph-s3-gP3">
+                                                            <rect key="frame" x="0.0" y="0.0" width="775" height="130.5"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="2EV-Kt-Gr0">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="131" id="JVt-q1-FbD"/>
+                                                                        <constraint firstAttribute="width" constant="375" id="vnN-iW-82Z"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="rPu-6f-pe6">
+                                                                    <rect key="frame" x="375" y="0.0" width="375" height="131"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="131" id="46C-Hq-g8C"/>
+                                                                        <constraint firstAttribute="width" constant="375" id="PQa-YQ-BDu"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6DW-Ay-bB0">
+                                                                    <rect key="frame" x="750" y="0.0" width="375" height="131"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="131" id="TdB-Te-w9J"/>
+                                                                        <constraint firstAttribute="width" constant="375" id="kG2-Sq-6wj"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="6DW-Ay-bB0" secondAttribute="bottom" constant="-0.5" id="8gN-lZ-eR7"/>
+                                                                <constraint firstItem="6DW-Ay-bB0" firstAttribute="leading" secondItem="rPu-6f-pe6" secondAttribute="trailing" id="8wa-dV-z6u"/>
+                                                                <constraint firstItem="rPu-6f-pe6" firstAttribute="leading" secondItem="2EV-Kt-Gr0" secondAttribute="trailing" id="Cx5-UX-mrM"/>
+                                                                <constraint firstAttribute="bottom" secondItem="2EV-Kt-Gr0" secondAttribute="bottom" constant="-0.5" id="QZJ-51-dAJ"/>
+                                                                <constraint firstAttribute="bottom" secondItem="rPu-6f-pe6" secondAttribute="bottom" constant="-0.5" id="U52-Ex-7ce"/>
+                                                                <constraint firstItem="2EV-Kt-Gr0" firstAttribute="top" secondItem="8ph-s3-gP3" secondAttribute="top" id="UlS-lh-spg"/>
+                                                                <constraint firstItem="6DW-Ay-bB0" firstAttribute="top" secondItem="8ph-s3-gP3" secondAttribute="top" id="W0M-02-AYw"/>
+                                                                <constraint firstAttribute="height" constant="130.5" id="YMS-J2-hRA"/>
+                                                                <constraint firstAttribute="width" priority="250" constant="775" id="iec-he-6RG"/>
+                                                                <constraint firstItem="6DW-Ay-bB0" firstAttribute="leading" secondItem="rPu-6f-pe6" secondAttribute="trailing" id="ohr-V9-b32"/>
+                                                                <constraint firstItem="rPu-6f-pe6" firstAttribute="top" secondItem="8ph-s3-gP3" secondAttribute="top" id="qA2-So-MyX"/>
+                                                                <constraint firstItem="rPu-6f-pe6" firstAttribute="leading" secondItem="2EV-Kt-Gr0" secondAttribute="trailing" id="qan-UD-DjP"/>
+                                                                <constraint firstItem="2EV-Kt-Gr0" firstAttribute="leading" secondItem="8ph-s3-gP3" secondAttribute="leading" id="xio-29-g4r"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="130" id="B3c-RB-QFH"/>
+                                                        <constraint firstItem="8ph-s3-gP3" firstAttribute="top" secondItem="m7f-aY-Kod" secondAttribute="top" id="MYg-nK-r7u"/>
+                                                        <constraint firstAttribute="trailing" secondItem="8ph-s3-gP3" secondAttribute="trailing" id="NJc-1I-eos"/>
+                                                        <constraint firstAttribute="bottom" secondItem="8ph-s3-gP3" secondAttribute="bottom" constant="-0.5" id="mIi-Ud-dAe"/>
+                                                        <constraint firstItem="8ph-s3-gP3" firstAttribute="leading" secondItem="m7f-aY-Kod" secondAttribute="leading" id="vxe-JR-XYY"/>
+                                                    </constraints>
+                                                </scrollView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="m7f-aY-Kod" secondAttribute="trailing" id="2Ww-G0-HBv"/>
+                                                <constraint firstItem="m7f-aY-Kod" firstAttribute="top" secondItem="bNK-HT-11w" secondAttribute="top" id="esC-YA-Ih9"/>
+                                                <constraint firstItem="m7f-aY-Kod" firstAttribute="leading" secondItem="bNK-HT-11w" secondAttribute="leading" id="ipN-0E-67V"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="crollview" destination="m7f-aY-Kod" id="wbq-Oa-PCp"/>
+                                            <outlet property="img1" destination="2EV-Kt-Gr0" id="CuJ-0U-kpt"/>
+                                            <outlet property="img2" destination="rPu-6f-pe6" id="gLl-Gz-v28"/>
+                                            <outlet property="img3" destination="6DW-Ay-bB0" id="2GS-U5-KTT"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
@@ -142,4 +217,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image1" width="16" height="16"/>
+    </resources>
 </document>

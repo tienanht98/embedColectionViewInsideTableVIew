@@ -9,8 +9,7 @@
 import UIKit
 
 class TableViewCell: UITableViewCell ,UICollectionViewDelegate ,UICollectionViewDataSource {
-   
-   
+    
     var data : DataOfCell_inTableView!
     @IBOutlet weak var CollectionVIew: UICollectionView!
     
